@@ -1,43 +1,39 @@
-# alfred-vscode
+# Alfred 4 Workflow for VSCode Workspaces
+
+Get a list of your VS Code workspaces in alfred
+
+- Type `vsc` into alfred to get a list
+- Works with **local** and **remote** workspaces
+
+![](assets/workflow-usage.png)
 
 Forked from https://github.com/kbshl/alfred-vscode
 
 ## Installation
 
+You need Node.js >= 16
+
 ```bash
-npm install --global alfred-vscode
+npm install --global @phartenfeller/alfred-vscode-workspaces
 ```
 
-**Note for Insiders Edition users:**
+**Make sure to set your path to VS Code the following**:
 
-Remember to set the `vscodeEdition` variable to `code-insiders` in the Workflow Configuration!
+1. Get your path to code with this terminal command
 
-**Note for VSCodium users:**
+```sh
+where code
+# for example /opt/homebrew/bin/code
+```
 
-Remember to set the `vscodeEdition` variable to `codium` in the Workflow Configuration!
+2. Open Alfred Preferences
 
-It defaults to `code`.
+3. Go to workflow and press variables button
 
-## Usage
+![](assets/variable-button.png)
 
-### Projects
+4. Set path to code and save
 
-Simply type `vsc` followed by space to list all projects. Optionally type a query to search for a
-specific project or group. The overall list shows 100 projects at max.
+![](assets/set-var.png)
 
-Select a project and press <kbd>Enter</kbd> to open it in VS Code or Code Insiders.
-
-Hold <kbd>Alt</kbd> when pressing <kbd>Enter</kbd> to open the project path in Terminal - You can set
-the terminal app in the Workflow variables view.
-
-Hold <kbd>Shift</kbd> when pressing <kbd>Enter</kbd> to open the project path in Finder.
-
-### Folders / Files
-
-Type `vs` followed by space and search for a specific folder or file to open in Visual Studio Code.
-
-Hold <kbd>Shift</kbd> when pressing <kbd>Enter</kbd> to open that folder or file in a new VS Code window.
-
-## Special Thanks
-
-Big Thanks goes to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Workflow](https://github.com/Cloudstek/alfred-atom) which I used as a base for this project.
+If you know a better way to handle this feel free to tell me or open a PR
