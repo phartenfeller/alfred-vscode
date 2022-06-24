@@ -1,23 +1,6 @@
 # alfred-vscode
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Github all releases](https://img.shields.io/github/downloads/kbshl/alfred-vscode/total.svg)](https://github.com/kbshl/alfred-vscode/releases/)
-[![GitHub stars](https://img.shields.io/github/stars/kbshl/alfred-vscode.svg)](https://github.com/kbshl/alfred-vscode/stargazers/)
-[![NPM total downloads](https://img.shields.io/npm/dt/alfred-vscode.svg)](https://www.npmjs.com/package/alfred-vscode)
-[![NPM license](https://img.shields.io/npm/l/alfred-vscode.svg)](https://www.npmjs.com/package/alfred-vscode)
-
-> [Alfred 3](https://www.alfredapp.com) workflow that allows you to browse and open [Visual Studio Code (Insiders)](https://code.visualstudio.com/) projects or simply open specified folders/files.
-
-![alfred-vscode in action](docs/screenshot.png)
-
-## Prerequisites
-
-You need
-
-- [Node.js 8+](https://nodejs.org)
-- [Alfred 3](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade
-- [Visual Studio Code Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) - Only if you like to have a project manager for VS Code.
-- [Visual Studio Code Command Line](https://code.visualstudio.com/docs/setup/mac)
+Forked from https://github.com/kbshl/alfred-vscode
 
 ## Installation
 

@@ -3,34 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>de.kbueschel.alfred.visualstudiocode</string>
+	<string>dev.hartenfeller.vscode-workspaces-alfred</string>
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>48B1068B-C755-4DBE-BDAB-9F24B0EE3354</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7F96C0AC-981E-4579-AFF4-CB907D33CAC4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>0344F04E-AC60-4847-AA73-E093D16BBB46</string>
-				<key>modifiers</key>
-				<integer>131072</integer>
-				<key>modifiersubtext</key>
-				<string>Open within VS Code as new window</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>4DD30082-AABC-4CFA-8FC3-0738FA31C350</key>
 		<array>
 			<dict>
@@ -43,38 +20,67 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>76A26469-7BB5-46C5-ADFE-C95581EB9B95</string>
-				<key>modifiers</key>
-				<integer>131072</integer>
-				<key>modifiersubtext</key>
-				<string>Open project path(s) in finder</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>16C325FD-9D57-4988-9A88-CE69B2EF34FA</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
-				<key>modifiersubtext</key>
-				<string>Open project path(s) in terminal</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Philipp Hartenfeller</string>
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Visual Studio Code</string>
+	<string>VSCode Workspaces</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>vsc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Loading workspaces...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>VS Code Workspaces</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4DD30082-AABC-4CFA-8FC3-0738FA31C350</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -98,221 +104,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>vsc</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Loading projects...</string>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Load Visual Studio Code (Insiders) project</string>
-				<key>title</key>
-				<string>Visual Studio Code (Insiders)</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>4DD30082-AABC-4CFA-8FC3-0738FA31C350</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<true/>
-				<key>escaping</key>
-				<integer>98</integer>
-				<key>script</key>
-				<string>open -a Finder {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>76A26469-7BB5-46C5-ADFE-C95581EB9B95</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<true/>
-				<key>escaping</key>
-				<integer>98</integer>
-				<key>script</key>
-				<string>open -a ${terminalApp:-Terminal} {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>16C325FD-9D57-4988-9A88-CE69B2EF34FA</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>./.bin/run.sh "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>7F96C0AC-981E-4579-AFF4-CB907D33CAC4</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>anchorfields</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>daterange</key>
-				<integer>0</integer>
-				<key>fields</key>
-				<array>
-					<dict>
-						<key>field</key>
-						<string>kMDItemDisplayName</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemTextContent</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemFinderComment</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-				</array>
-				<key>includesystem</key>
-				<false/>
-				<key>keyword</key>
-				<string>vs</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>scopes</key>
-				<array>
-					<string>~</string>
-				</array>
-				<key>subtext</key>
-				<string>Open within Visual Studio Code (Insiders)</string>
-				<key>title</key>
-				<string>Visual Studio Code (Insiders)</string>
-				<key>types</key>
-				<array/>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.filefilter</string>
-			<key>uid</key>
-			<string>48B1068B-C755-4DBE-BDAB-9F24B0EE3354</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>/usr/local/bin/${vscodeEdition} --new-window "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>0344F04E-AC60-4847-AA73-E093D16BBB46</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string># Alfred Visual Studio Code Project Manager Workflow
@@ -320,27 +111,6 @@
 For furher details see https://github.com/kbshl/alfred-vscode</string>
 	<key>uidata</key>
 	<dict>
-		<key>0344F04E-AC60-4847-AA73-E093D16BBB46</key>
-		<dict>
-			<key>xpos</key>
-			<integer>520</integer>
-			<key>ypos</key>
-			<integer>550</integer>
-		</dict>
-		<key>16C325FD-9D57-4988-9A88-CE69B2EF34FA</key>
-		<dict>
-			<key>xpos</key>
-			<integer>520</integer>
-			<key>ypos</key>
-			<integer>300</integer>
-		</dict>
-		<key>48B1068B-C755-4DBE-BDAB-9F24B0EE3354</key>
-		<dict>
-			<key>xpos</key>
-			<integer>100</integer>
-			<key>ypos</key>
-			<integer>480</integer>
-		</dict>
 		<key>4DD30082-AABC-4CFA-8FC3-0738FA31C350</key>
 		<dict>
 			<key>xpos</key>
@@ -348,26 +118,12 @@ For furher details see https://github.com/kbshl/alfred-vscode</string>
 			<key>ypos</key>
 			<integer>170</integer>
 		</dict>
-		<key>76A26469-7BB5-46C5-ADFE-C95581EB9B95</key>
-		<dict>
-			<key>xpos</key>
-			<integer>520</integer>
-			<key>ypos</key>
-			<integer>180</integer>
-		</dict>
-		<key>7F96C0AC-981E-4579-AFF4-CB907D33CAC4</key>
-		<dict>
-			<key>xpos</key>
-			<integer>520</integer>
-			<key>ypos</key>
-			<integer>420</integer>
-		</dict>
 		<key>A5F42246-10C3-441B-9871-7A28FE42EEEC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>320</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>170</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -384,6 +140,6 @@ For furher details see https://github.com/kbshl/alfred-vscode</string>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://hartenfeller.dev</string>
 </dict>
 </plist>
