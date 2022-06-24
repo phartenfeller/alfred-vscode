@@ -25,7 +25,7 @@
 	<key>createdby</key>
 	<string>Philipp Hartenfeller</string>
 	<key>description</key>
-	<string></string>
+	<string>Alfred Workflow to search VSCode Workspaces</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -38,13 +38,13 @@
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -68,9 +68,9 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>VS Code Workspaces</string>
+				<string>VSCode Workspaces</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -89,7 +89,8 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./.bin/run.sh "$1"</string>
+				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/code:$PATH
+"$codepath" -n --folder-uri "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -128,18 +129,12 @@ For furher details see https://github.com/kbshl/alfred-vscode</string>
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>terminalApp</key>
-		<string></string>
-		<key>vscodeEdition</key>
-		<string>code</string>
+		<key>codepath</key>
+		<string>/opt/homebrew/bin/code</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array>
-		<string>vscodeEdition</string>
-	</array>
 	<key>version</key>
-	<string></string>
+	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string>https://hartenfeller.dev</string>
+	<string>https://github.com/phartenfeller/alfred-vscode</string>
 </dict>
 </plist>
