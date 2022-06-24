@@ -107,9 +107,9 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string># Alfred Visual Studio Code Project Manager Workflow
+	<string># Alfred Visual Studio Code Workspace Workflow
 
-For furher details see https://github.com/kbshl/alfred-vscode</string>
+For furher details see https://github.com/phartenfeller/alfred-vscode-workspaces</string>
 	<key>uidata</key>
 	<dict>
 		<key>4DD30082-AABC-4CFA-8FC3-0738FA31C350</key>
