@@ -25,7 +25,7 @@
 	<key>createdby</key>
 	<string>Philipp Hartenfeller</string>
 	<key>description</key>
-	<string>Alfred Workflow to search VSCode Workspaces</string>
+	<string>Alfred workflow that allows you to browse and open Visual Studio Code workspaces</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -89,8 +89,8 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>export PATH=/usr/local/bin/:/opt/homebrew/bin/code:$PATH
-"$codepath" -n --folder-uri "$1"</string>
+				<string>source ~/.zshrc
+code -n --folder-uri "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -129,12 +129,10 @@ For furher details see https://github.com/phartenfeller/alfred-vscode-workspaces
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>codepath</key>
-		<string>/opt/homebrew/bin/code</string>
 	</dict>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/phartenfeller/alfred-vscode</string>
+	<string>https://github.com/phartenfeller/alfred-vscode-workspaces</string>
 </dict>
 </plist>
