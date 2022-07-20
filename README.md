@@ -1,4 +1,4 @@
-# Alfred 4 Workflow for VSCode Workspaces
+# Alfred 4/5 Workflow for VSCode Workspaces
 
 Get a list of your VS Code workspaces in alfred
 
@@ -8,6 +8,8 @@ Get a list of your VS Code workspaces in alfred
 ![](assets/workflow-usage.png)
 
 Forked from https://github.com/kbshl/alfred-vscode
+
+Blogpost: https://hartenfeller.dev/blog/alfred-vscode-workflow
 
 ## Installation
 
