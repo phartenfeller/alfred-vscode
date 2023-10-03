@@ -13,6 +13,8 @@ Blogpost: https://hartenfeller.dev/blog/alfred-vscode-workflow
 
 ## Installation
 
+You need `code` added to shell path: https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
+
 You need Node.js >= 16
 
 ```bash
