@@ -1,6 +1,6 @@
 {
   "name": "@phartenfeller/alfred-vscode-workspaces",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Alfred workflow that allows you to browse and open Visual Studio Code workspaces",
   "license": "MIT",
   "repository": "https://github.com/phartenfeller/alfred-vscode-workspaces",
@@ -43,8 +43,8 @@
   },
   "dependencies": {
     "alfy": "^1.0.0",
-    "better-sqlite3": "^7.5.3",
-    "fuzzysort": "^2.0.1"
+    "better-sqlite3": "^9.4.3",
+    "fuzzysort": "^2.0.4"
   },
   "devDependencies": {
     "eslint": "^8.19.0",
