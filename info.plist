@@ -131,7 +131,7 @@ For furher details see https://github.com/phartenfeller/alfred-vscode-workspaces
 	<dict>
 	</dict>
 	<key>version</key>
-	<string>1.2.1</string>
+	<string>1.3.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/phartenfeller/alfred-vscode-workspaces</string>
 </dict>
