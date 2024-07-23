@@ -37,8 +37,8 @@ async function main() {
 
       alfy.output(
         projects.map((p) => ({
-          title: p.title,
-          subtitle: p.subtitle,
+          title: decodeURIComponent(p.title),
+          subtitle: decodeURIComponent(p.subtitle),
           // icon: p.icon,
           arg: p.folderUri,
           uid: p.uid,
